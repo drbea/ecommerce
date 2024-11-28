@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Panier {% endblock %}
+
+{% block searchbar %} {% endblock %}
+
+{% block content %}
+
+  <div class="container div-1 my-5">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th class="h3 fw-bold">Produit</th>
+          <th class="h3 fw-bold">Quantité</th>
+          <th class="h3 fw-bold">Prix Unitaire</th>
+          <th class="h3 fw-bold">Détails</th>
+          <th class="h3 fw-bold">Supprimer</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td class="fw-bold">Produit 1</td>
+          <td>2</td>
+          <td>19.99€</td>
+          <td><a class="btn btn-primary">Voir</a></td>
+          <td><a class="btn btn-danger">X</a></td>
+        </tr>
+        </tbody>
+    </table>
+  </div>
+{% endblock content %}
+
+
+{% block javascript %}
+<script type="text/javascript" src="{% static 'js/index.js' %}">
+  </script>
+{% endblock %}
